@@ -131,4 +131,4 @@ CREATE TABLE salaire (
 );
 ALTER TABLE `salaire` 
     ADD  CONSTRAINT `matrecule_patient` FOREIGN KEY (`matrecule`) REFERENCES `patient`(`matrecule`) ON DELETE CASCADE ON UPDATE CASCADE,
-    `salaire` CHANGE `mois` `date` DATE NULL DEFAULT NULL;
+    CHANGE `mois` `date` DATE NULL DEFAULT NULL;
